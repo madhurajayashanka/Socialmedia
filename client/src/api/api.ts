@@ -3,7 +3,7 @@ import { Post } from '../types/post';
 import { Comment } from '../types/comment';
 
 const api = axios.create({
-    baseURL: process.env.API_URL+'/api' || 'http://localhost:5000/api',
+    baseURL:'http://localhost:5000/api',
 });
 
 export const fetchPosts = async (): Promise<Post[]> => {
